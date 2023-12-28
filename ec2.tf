@@ -17,7 +17,7 @@ resource "aws_instance" "kubeadm_master" {
 
   provisioner "remote-exec" {
     inline = [
-      "sudo git clone https://github.com/smobinulla/kuberepos.git /tmp/scripts",
+      "sudo git clone https://github.com/lokeshjyo01/AWS_K8S_TF_2024.git /tmp/scripts",
       "sudo chmod +x /tmp/scripts/master.sh",
       #"sleep 2m",
       #"sudo /tmp/scripts/master.sh" # Execute your script
